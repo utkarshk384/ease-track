@@ -60,6 +60,7 @@ export const getDetail = async (
           ...requestDefaults,
           url: requestDefaults.url.replace("<id>", pkg.tracking_id),
         });
+
         details = DTDCTransformer(res);
         break;
     }
